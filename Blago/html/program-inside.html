@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title></title>
+    <title>Программа внутри</title>
+
+    <link rel="preload" as="font" href="../fonts/montserrat/montserrat-v13-cyrillic_latin-700.woff2" type="font/woff2"
+          crossorigin="anonymous">
+    <link rel="preload" as="font" href="../fonts/montserrat/montserrat-v13-cyrillic_latin-700.woff" type="font/woff"
+          crossorigin="anonymous">
+
+    <link rel="preload" as="font" href="../fonts/rawline/Rawline-Regular-latin-cyrillic.woff2" type="font/woff2"
+          crossorigin="anonymous">
+    <link rel="preload" as="font" href="../fonts/rawline/Rawline-Regular-latin-cyrillic.woff" type="font/woff"
+          crossorigin="anonymous">
 
     <link rel="preload" as="style" type="text/css" href="../css/reset.css">
     <link rel="preload" as="style" type="text/css" href="../css/setDefaultStyle.css">
@@ -11,46 +21,30 @@
     <link rel="stylesheet" href="../css/setDefaultStyle.css">
 
     <link rel="preload" as="style" type="text/css" href="../css/header/header-320px.css">
-    <link rel="preload" as="style" type="text/css" href="../css/header/header-789px.css" media="(min-width: 789px)">
-    <link rel="preload" as="style" type="text/css" href="../css/header/header-1080px.css" media="(min-width: 1080px)">
     <link rel="stylesheet" href="../css/header/header-320px.css">
-    <link rel="stylesheet" href="../css/header/header-789px.css" media="(min-width: 789px)">
+    <link rel="stylesheet" href="../css/header/header-789px.css" media="(min-width: 789px) and (max-width: 1079.98px)">
     <link rel="stylesheet" href="../css/header/header-1080px.css" media="(min-width: 1080px)">
 
-    <link rel="stylesheet" href="../css/index/indexPage-main-320px.css">
-    <link rel="preload" as="style" type="text/css" href="../css/index/indexPage-main-789px.css"
-          media="(min-width: 789px)">
-    <link rel="preload" as="style" type="text/css" href="../css/index/indexPage-main-1080px.css"
-          media="(min-width: 1080px)">
-    <link rel="preload" as="style" type="text/css" href="../css/index/indexPage-main-1366px.css"
-          media="(min-width: 1366px)">
-    <link rel="stylesheet" href="../css/index/indexPage-main-789px.css" media="(min-width: 789px)">
-    <link rel="stylesheet" href="../css/index/indexPage-main-1080px.css" media="(min-width: 1080px)">
-    <link rel="stylesheet" href="../css/index/indexPage-main-1366px.css" media="(min-width: 1366px)">
-
     <link rel="preload" as="style" type="text/css" href="../css/program-inside/programInsidePage-main-320px.css">
-    <link rel="preload" as="style" type="text/css" href="../css/program-inside/programInsidePage-main-789px.css"
-          media="(min-width: 789px)">
-    <link rel="preload" as="style" type="text/css" href="../css/program-inside/programInsidePage-main-1080px.css"
-          media="(min-width: 1080px)">
     <link rel="stylesheet" href="../css/program-inside/programInsidePage-main-320px.css">
-    <link rel="stylesheet" href="../css/program-inside/programInsidePage-main-789px.css" media="(min-width: 789px)">
+    <link rel="stylesheet" href="../css/program-inside/programInsidePage-main-789px.css" media="(min-width: 789px) and (max-width: 1079.98px)">
     <link rel="stylesheet" href="../css/program-inside/programInsidePage-main-1080px.css" media="(min-width: 1080px)">
 
 
     <link rel="preload" as="style" type="text/css" href="../css/footer/footer-320px.css">
-    <link rel="preload" as="style" type="text/css" href="../css/footer/footer-789px.css" media="(min-width: 789px)">
-    <link rel="preload" as="style" type="text/css" href="../css/footer/footer-1080px.css" media="(min-width: 1080px)">
     <link rel="stylesheet" href="../css/footer/footer-320px.css">
-    <link rel="stylesheet" href="../css/footer/footer-789px.css" media="(min-width: 789px)">
+    <link rel="stylesheet" href="../css/footer/footer-789px.css" media="(min-width: 789px) and (max-width: 1079.98px)">
     <link rel="stylesheet" href="../css/footer/footer-1080px.css" media="(min-width: 1080px)">
+
+    <link rel="dns-prefetch" href="https://www.facebook.com/blago.privatbank">
+    <link rel="dns-prefetch" href="https://www.instagram.com/privatbank_original/">
 </head>
 <body>
 <header class="page-left-right-padding">
     <nav class="logo">
         <div class="logo--redirect">
             <a href="https://privatbank.ua/" class="logo__redirect-pb"></a>
-            <a href="../index.html" class="logo__redirect-blago"></a>
+            <a href="index.html" class="logo__redirect-blago"></a>
         </div>
         <img src="../img/logo.svg" alt="alt">
     </nav>
@@ -71,7 +65,7 @@
             <h2 class="pi__section__h2">Підтримка армії</h2>
             <div class="pi__section__div--fb">
                 <p class="pi__section__p--start">Стартовала 06.06.2014</p>
-                <div class="pi__fb--outline"></div>
+                <img src="../img/fb-outline.svg" alt="fb" class="pi__fb--outline">
             </div>
             <hr class="pi__section__hr--help-army">
             <div class="pi_section__div--donated-and-costs">
@@ -115,8 +109,8 @@
             <div class="pi__article--photo-report">
                 <h2 class="pi__section__h2">Фотозвіт</h2>
                 <div class="pi__article__img--next-previous">
-                    <div class="pi__section-photo-report__img--previous"></div>
-                    <div class="pi__section-photo-report__img--next"></div>
+                    <img src="../img/next.svg" alt=previous" class="pi__section-photo-report__img--previous">
+                    <img src="../img/next.svg" alt=previous" class="pi__section-photo-report__img--next">
                 </div>
             </div>
             <div class="pi__article--photo-report__div">
@@ -255,18 +249,19 @@
             </ul>
             <p>Мы в соц. сетях:</p>
             <ul class="footer--list-soc-net">
-                <li class="i__li--fb">
-                    <a href="https://www.facebook.com/blago.privatbank" class="footer__soc-net i__fb"></a>
+                <li>
+                    <a href="https://www.facebook.com/blago.privatbank"><img src="../img/fb.svg" alt="fb"
+                                                                             class="footer__soc-net i__fb"></a>
                 </li>
                 <li><a href="https://www.instagram.com/privatbank_original"><img src="../img/insta.svg" alt="instagram"
-                                                                                 class="footer__soc-net"></a></li>
+                                                                                 class="footer__soc-net i__inst" ></a></li>
             </ul>
         </div>
 
         <nav class="logo footer-logo">
             <div class="logo--redirect">
                 <a href="https://privatbank.ua/" class="logo__redirect-pb"></a>
-                <a href="../index.html" class="logo__redirect-blago"></a>
+                <a href="index.html" class="logo__redirect-blago"></a>
             </div>
             <img src="../img/logo.svg" alt="alt">
             <p class="footer--description">Официальный сайт приватбанка и тд, нужен текст, лицензии или реквизиты</p>

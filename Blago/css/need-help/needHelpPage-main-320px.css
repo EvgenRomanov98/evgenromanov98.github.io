@@ -57,26 +57,60 @@
 }
 
 .article--arrow-next {
-    background: url("../../img/next.svg") no-repeat;
-    width: 40px;
-    height: 40px;
-    display: block;
     position: absolute;
     right: 1rem;
     bottom: calc(50% - 20px);
     transition: .2s all;
 }
 
-.need-help__section__article:hover > .section__article__a > .article--arrow-next{
-    background: url("../../img/next-hover.svg") no-repeat;
+.need-help__section__article:hover > .section__article__a > .article--arrow-next {
+    filter: invert(64%) sepia(50%) saturate(2%) hue-rotate(318deg) brightness(91%) contrast(91%);
 }
 
-.need-help__section__article:active > .section__article__a > .article--arrow-next{
-    background: url("../../img/next-click.svg") no-repeat;
+.need-help__section__article:active > .section__article__a > .article--arrow-next {
+    filter: invert(43%) sepia(91%) saturate(1831%) hue-rotate(82deg) brightness(109%) contrast(85%);
 }
 
 .need-help__section__article:last-child {
     margin: 0;
+}
+
+.input--select-page {
+    display: none;
+}
+
+#select-need-help-page:checked + #header__label--need-help {
+    color: #24bb13;
+}
+
+#select-need-help-page:not(:checked) + #header__label--need-help {
+    color: #424242;
+}
+
+#select-need-help-page:checked ~ .need-help__main,
+#select-treat-child-page:checked ~ .treat-child-page,
+#select-help-legal-entities-page:checked ~ .help-legal-entities-page,
+#select-cooperation-page:checked ~ .cooperation-page,
+#select-application-status-page:checked ~ .application-status-page,
+#select-processing-personal-data-page:checked ~ .processing-personal-data {
+    display: block;
+}
+
+#select-need-help-page:not(:checked) ~ .need-help__main,
+#select-treat-child-page:not(:checked) ~ .treat-child-page,
+#select-help-legal-entities-page:not(:checked) ~ .help-legal-entities-page,
+#select-cooperation-page:not(:checked) ~ .cooperation-page,
+#select-application-status-page:not(:checked) ~ .application-status-page,
+#select-processing-personal-data-page:not(:checked) ~ .processing-personal-data {
+    display: none;
+}
+
+.nh__checkbox--container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+    cursor: pointer;
 }
 
 @media (min-width: 789px) {
@@ -94,9 +128,34 @@
     .article__img {
         padding: 24px 16px 24px 24px;
     }
+
+    .nh__section--personal-data {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .nh__checkbox--container {
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 @media (min-width: 1024px) {
+    #select-need-help-page:checked ~ .need-help__main {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tc__section-info__h2 {
+        font-size: 46px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .tc__main__section--info {
+        padding-top: 80px !important;
+        padding-bottom: 110px !important;
+    }
 
     .need-help__main {
         display: flex;
