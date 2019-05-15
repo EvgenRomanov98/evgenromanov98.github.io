@@ -35,6 +35,10 @@
     flex-direction: column;
 }
 
+.i__slide__img{
+    width: 100%;
+}
+
 .i__slide--content {
     position: relative;
     top: 150px
